@@ -20,14 +20,14 @@
             <span class="icon-bar"></span>
           </button>
           <!-- traditional HTML to create link (with class and icon), ruby method below:  <a href="/" class="navbar-brand"><i class="fa fa-group"></i> DevMatch</a> -->
-          <%= link_to "/", class: "navbar-brand" do %>
+          <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group"></i> DevMatch
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="/about">About</a></li> traditional way to add a link, rails way below -->
-            <li><%= link_to "About", "/about" %></li> <!-- writing a link in rails -->
+            <li><%= link_to "About", about_path %></li> <!-- writing a link in rails -->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
